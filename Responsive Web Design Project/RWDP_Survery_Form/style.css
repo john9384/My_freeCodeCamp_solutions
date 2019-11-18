@@ -1,0 +1,135 @@
+#main {
+  margin: 0;
+  padding: 0;
+  color: black;
+  background-color: whitesmoke;
+  font-family: Helvetica, sans-serif;
+}
+
+div {
+  margin: 10px 30px 0 30px;
+  line-height: 20px;
+  font-size: 15px;
+  color: grey;
+}
+
+div p {
+  font-size: 18px;
+  color: black;
+}
+
+#title {
+  width: 70%;
+  height: 40px;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  background-color: lightskyblue;
+}
+
+h3 {
+  background-color: lightskyblue;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  text-transform: uppercase;
+  color: black;
+}
+
+#description {
+  width: 70%;
+  height: 60px;
+  margin: 0 auto 5px auto;
+}
+
+#survey-form {
+  max-width: 70%;
+  border: 1px solid black;
+  margin: 0 auto 50px auto;
+  padding-bottom: 20px;
+}
+
+#name-label,
+#email-label,
+#number-label {
+  display: block;
+  float: left;
+  max-height: 30px;
+  margin: 5px;
+  width: 60px;
+  padding-top: 7px;
+  font-size: 18px;
+  color: black;
+  text-transform: uppercase;
+}
+
+#name,
+#email {
+  height: 30px;
+  width: 300px;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+  margin: 5px;
+  padding-left: 10px;
+}
+
+#number {
+  height: 30px;
+  width: 80px;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+  margin: 5px;
+  padding-left: 10px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 10px grey;
+}
+
+#dropdown {
+  height: 35px;
+  width: 120px;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+  margin-left: 6px;
+  padding-left: 10px;
+}
+
+input[type="radio"] {
+  margin-left: 20px;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+input[type="checkbox"] {
+  border: 1px solid black;
+  padding-top: 5px;
+  height: 15px;
+  width: 15px;
+  margin-top: 10px;
+}
+
+textarea {
+  height: 150px;
+  width: 400px;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+#submit {
+  text-transform: uppercase;
+  height: 30px;
+  width: 150px;
+  text-align: center;
+  background-color: rgb(68, 169, 236);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+}
+body:nth-child(1) {
+  background-color: blue;
+}
