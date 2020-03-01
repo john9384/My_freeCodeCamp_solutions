@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.titleBar {
+  height: 60px;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  background-color: yellowgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleBar p {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+}
+
+/* ========================================== */
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  min-width: 200px;
+  max-width: 201px;
+  background-color: #f1f1f1;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: yellowgreen;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+#navbar header {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* ========================================================== */
+
+.content {
+  padding: 1px 16px;
+}
+
+.content header {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 16px;
+}
+
+.onContentScroll {
+  padding: 1px 16px;
+  height: 1000px;
+  margin-left: 201px;
+}
+code {
+  height: 100px;
+  width: 500px;
+  padding: 10px;
+  margin: 10px 0 10px 50px;
+}
+/* ========================================================= */
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar {
+    display: none;
+  }
+  .container {
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+    margin: 0;
+    overflow: scroll;
+  }
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
