@@ -1,66 +1,66 @@
 html,
 body {
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
 }
 
 #drum-machine {
-    width: 30%;
-    height: 70vh;
-    background-color: darkolivegreen;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px 10px 20px 10px;
+  width: 30%;
+  height: 70vh;
+  background-color: darkolivegreen;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 10px 20px 10px;
 }
 
 #display {
-    width: 90%;
-    max-width: 90%;
-    height: 20%;
-    max-height: 20%;
-    background-color: darkslategray;
-    margin: 0;
-    text-align: left;
+  width: 90%;
+  max-width: 90%;
+  height: 20%;
+  max-height: 20%;
+  background-color: darkslategray;
+  margin: 0;
+  text-align: left;
 }
 
 #display p {
-    font-size: 35px;
-    color: black;
-    font-weight: bolder;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
+  font-size: 35px;
+  color: black;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
 }
 
 .drum-pad {
-    width: 30%;
-    height: 25%;
-    margin: 10px 0 0 0;
-    background-color: darkslategrey;
-    text-align: center;
-    border: 1px solid grey;
+  width: 30%;
+  height: 25%;
+  margin: 10px 0 0 0;
+  background-color: darkslategrey;
+  text-align: center;
+  border: 1px solid grey;
 }
 
 .drum-pad:hover {
-    opacity: 0.5;
-    transition: opacity 3s;
+  opacity: 0.5;
+  transition: opacity 3s;
 }
 
 .drum-pad:not(:hover) {
-    opacity: 1;
-    transition: opacity 3s;
+  opacity: 1;
+  transition: opacity 3s;
 }
 
 .clip {
-    background-color: blue;
-    width: 100%;
-    height: 10%;
+  background-color: blue;
+  width: 100%;
+  height: 10%;
 }
