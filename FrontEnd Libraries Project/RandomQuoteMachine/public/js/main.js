@@ -1,8 +1,8 @@
-//There is an array of quotes
-//Generate randowm number to select from the array
-//On load display a random quote
-// on click of button remove the current quote and set new quote
-let btn = document.querySelector("btn");
+let quoteBtn = document.getElementById("new-quote");
+let tweetBtn = document.getElementById("tweet-quote");
+let text = document.getElementById("text");
+let author = document.getElementById("author");
+
 const quotes = [
   {
     quote:
@@ -20,3 +20,18 @@ const quotes = [
     author: "Beethoven"
   }
 ];
+quoteBtn.addEventListener("click", () => {
+  //generate random number from the quotes array
+  let max = quotes.length - 1;
+  let min = 0;
+  let randNum = Math.floor(Math.random() * (max - min + 1)) + min;
+  //set new text and author
+  // text.removeAttribute("class");
+  // setTimeout(() => {
+  //   text.className = "animated fadeIn";
+  //   text.innerHTML = quotes[randNum].quote;
+  //   author.innerHTML = quotes[randNum].author;
+  // }, 100);
+  text.innerHTML = quotes[randNum].quote;
+  author.innerHTML = quotes[randNum].author;
+});
