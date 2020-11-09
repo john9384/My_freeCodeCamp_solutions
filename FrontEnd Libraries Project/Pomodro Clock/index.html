@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
   <body>
     <div>
       <div>
@@ -9,22 +14,19 @@
       </div>
       <div>
         <span id="session-label">Break Length</span>
-        <button id="session-decrement">
-          DecrSession
-        </button>
-        <button id="session-increment">
-          IncrSession
-        </button>
+        <button id="session-decrement">DecrSession</button>
+        <button id="session-increment">IncrSession</button>
       </div>
       <div>
         <input type="number" min="0" max="59" id="break-length" />
         <input type="number" min="0" max="59" id="session-length" />
-        <span id="timer-label"></span>
+        <span id="timer-label">Timer</span>
         <p id="time-left">
-          <input type="number" id="min-left" />:<input
+          <!-- <input type="number" id="min-left" />:<input
             type="number"
             id="sec-left"
-          />
+          /> -->
+          <span id="min-left"></span>: <span id="sec-left"></span>
         </p>
       </div>
       <div>
