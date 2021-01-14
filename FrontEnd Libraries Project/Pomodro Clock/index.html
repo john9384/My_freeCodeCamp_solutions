@@ -3,34 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
-    <div>
-      <div>
-        <span id="break-label">Break Length</span>
-        <button id="break-decrement">DecrBreak</button>
-        <button id="break-increment">IncrBreak</button>
+    <div class="container">
+      <div class="ctrl-btns btns-sec">
+        <h3 id="session-label">Session Length</h3>
+        <button id="session-decrement">-</button>
+        <button id="session-increment">+</button>
       </div>
-      <div>
-        <span id="session-label">Break Length</span>
-        <button id="session-decrement">DecrSession</button>
-        <button id="session-increment">IncrSession</button>
+      <div class="ctrl-btns btns-sec">
+        <h3 id="break-label">Break Length</h3>
+        <button id="break-decrement">-</button>
+        <button id="break-increment">+</button>
       </div>
-      <div>
-        <input type="number" min="0" max="59" id="break-length" />
+
+      <div class="display">
         <input type="number" min="0" max="59" id="session-length" />
-        <span id="timer-label">Timer</span>
+        <input type="number" min="0" max="59" id="break-length" />
+
+        <span id="timer-label">Session</span>
         <p id="time-left">
-          <!-- <input type="number" id="min-left" />:<input
-            type="number"
-            id="sec-left"
-          /> -->
-          <span id="min-left"></span>: <span id="sec-left"></span>
+          <span id="min-left">00</span>: <span id="sec-left">00</span>
         </p>
       </div>
-      <div>
-        <button id="start_stop">Start</button>
+      <div class="ctrl-btns btns-main">
+        <button id="start_stop" class="start-btn">Start</button>
+        <button id="start_stop" class="pause-btn hidden">Pause</button>
         <button id="reset">Reset</button>
       </div>
     </div>
