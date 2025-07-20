@@ -19,7 +19,7 @@ function checkCashRegister(price, cash, cid) {
   };
   for (let j = 0; j < cid.length; j++) {
     total = (total * 10 + cid[j][1] * 10) / 10;
-    if (j == cid.length - 1) {
+    if (j === cid.length - 1) {
       total = total * 100;
       let a = Math.round(total);
       total = a / 100;
@@ -29,7 +29,7 @@ function checkCashRegister(price, cash, cid) {
     result.status = "INSUFFICIENT_FUNDS";
     result.change = [];
     return result;
-  } else if (total == cashBalance) {
+  } else if (total === cashBalance) {
     result.status = "CLOSED";
     result.change = cid;
     return result;
@@ -48,15 +48,16 @@ function checkCashRegister(price, cash, cid) {
       count++;
     }
   }
-  if (cashBalance != 0) {
+  if (cashBalance !== 0) {
     result.status = "INSUFFICIENT_FUNDS";
     result.change = [];
     return result;
   }
-  let filtered = result.change.filter(function(x) {
+
+ result.change = result.change.filter(function(x) {
     return x[1] > 0;
   });
-  result.change = filtered;
+
   console.log(result);
 }
 
